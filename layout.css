@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* universal selector */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'sans-serif';
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.grid.container {
+  width: 99vw;
+  height: 99vh;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr 2fr 2fr 1fr;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+    'a b c d'
+    'l m m e'
+    'k m m f'
+    'j i h g';
+}
+
+.grid.item {
+  background: radial-gradient(
+    circle,
+    rgba(6, 0, 122, 1) 0%,
+    rgba(43, 43, 255, 0.9026961126247374) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /*  background-image: linear-gradient(90deg, #4776e6, #8e54e9); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid.item:hover {
+  transform: scale(0.95);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#box1 {
+  grid-area: a;
+}
+#box2 {
+  grid-area: b;
+}
+#box3 {
+  grid-area: c;
+}
+#box4 {
+  grid-area: d;
+}
+
+#box5 {
+  grid-area: e;
+}
+
+#box6 {
+  grid-area: f;
+}
+
+#box7 {
+  grid-area: g;
+}
+
+#box8 {
+  grid-area: h;
+}
+
+#box9 {
+  grid-area: i;
+}
+#box10 {
+  grid-area: j;
+}
+#box11 {
+  grid-area: k;
+}
+#box12 {
+  grid-area: l;
+}
+
+#box-main {
+  grid-area: m;
+}
